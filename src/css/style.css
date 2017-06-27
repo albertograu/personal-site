@@ -6,9 +6,17 @@ h1 {
   font-size: 3.5em; }
 
 #hero {
-  background: url("/assets/bg.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/inset.svg") no-repeat;
   background-size: cover;
   background-position: 0 50%; }
+
+.hero-content h1, .hero-content h4 {
+  color: #47e5bc;
+  box-shadow: 2px;
+  text-shadow: 2px 1px 0px #080808; }
+
+span.alberto {
+  color: #fea; }
 
 .navbar {
   width: 100% !important;
@@ -86,7 +94,10 @@ h1 {
   outline: 0; }
 
 #send-button .btn {
-  margin-top: 95px;
-  padding: 12px;
+  margin-top: 90px;
+  padding: 10px;
   color: #000;
   border: 1px solid #232523; }
+
+#forms {
+  text-align: center; }
