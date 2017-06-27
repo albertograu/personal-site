@@ -67,7 +67,8 @@ span.alberto {
 
 .feature-content {
   text-align: center;
-  height: 75%; }
+  height: 75%;
+  font-weight: 100; }
 
 #contact-container {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk.jpeg") no-repeat;
