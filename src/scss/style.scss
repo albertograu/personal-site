@@ -19,6 +19,14 @@ h1 {
     color: rgb(71, 229, 188);
     text-shadow: 2px 1px 0px rgb(8, 8, 8);
   }
+
+}
+
+.main-text {
+  @media(max-width: 770px) {
+    padding-left: 0;
+    margin-left: 0;
+  }
 }
 
 span.alberto {

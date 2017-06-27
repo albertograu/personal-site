@@ -14,6 +14,11 @@ h1 {
   color: #47e5bc;
   text-shadow: 2px 1px 0px #080808; }
 
+@media (max-width: 770px) {
+  .main-text {
+    padding-left: 0;
+    margin-left: 0; } }
+
 span.alberto {
   color: #fea;
   font-weight: bold; }
