@@ -17,7 +17,6 @@ h1 {
 .hero-content {
   h1, h4 {
     color: rgb(71, 229, 188);
-    box-shadow: 2px;
     text-shadow: 2px 1px 0px rgb(8, 8, 8);
   }
 }
@@ -115,14 +114,6 @@ span.alberto {
 }
 
 
-#icons {
-
-}
-
-#icons:hover {
-
-
-}
 
 
 #contact-container {
@@ -130,6 +121,7 @@ span.alberto {
   background-size: cover;
   background-position: 0 75%;
   height: 100%;
+  padding-bottom: 70px;
 
   h2 {
     letter-spacing: 7px;
@@ -145,7 +137,7 @@ span.alberto {
 
   .form-control {
     background: #fff;
-    border: 3px solid #2f2f2f;
+    border: 1px solid #2f2f2f;
     padding: 8px;
     height: 80px;
     outline: 0;
@@ -153,7 +145,7 @@ span.alberto {
 
   .form-control-email {
     background: #fff;
-    border: 3px solid #2f2f2f;
+    border: 1px solid #2f2f2f;
     padding: 8px;
     height: 38px;
     width: 325px;
@@ -186,4 +178,18 @@ span.alberto {
 
 #myFooter {
   background: rgb(71, 229, 188);
+  padding-top: 16px;
+  padding-bottom: 18px;
+}
+
+
+#social-icons {
+  color: #292F36 !important;
+  font-size: 20px;
+}
+
+.copy {
+  font-size: 17px;
+  color: #232523;
+  text-align: right;
 }

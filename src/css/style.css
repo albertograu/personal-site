@@ -12,7 +12,6 @@ h1 {
 
 .hero-content h1, .hero-content h4 {
   color: #47e5bc;
-  box-shadow: 2px;
   text-shadow: 2px 1px 0px #080808; }
 
 span.alberto {
@@ -74,7 +73,8 @@ span.alberto {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk.jpeg") no-repeat;
   background-size: cover;
   background-position: 0 75%;
-  height: 100%; }
+  height: 100%;
+  padding-bottom: 70px; }
   #contact-container h2 {
     letter-spacing: 7px;
     font-weight: 600; }
@@ -85,13 +85,13 @@ span.alberto {
     font-size: 15px; }
   #contact-container .form-control {
     background: #fff;
-    border: 3px solid #2f2f2f;
+    border: 1px solid #2f2f2f;
     padding: 8px;
     height: 80px;
     outline: 0; }
   #contact-container .form-control-email {
     background: #fff;
-    border: 3px solid #2f2f2f;
+    border: 1px solid #2f2f2f;
     padding: 8px;
     height: 38px;
     width: 325px;
@@ -112,4 +112,15 @@ span.alberto {
     padding: 0; } }
 
 #myFooter {
-  background: #47e5bc; }
+  background: #47e5bc;
+  padding-top: 16px;
+  padding-bottom: 18px; }
+
+#social-icons {
+  color: #292F36 !important;
+  font-size: 20px; }
+
+.copy {
+  font-size: 17px;
+  color: #232523;
+  text-align: right; }
