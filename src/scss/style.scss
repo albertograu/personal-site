@@ -23,8 +23,8 @@ h1 {
 }
 
 span.alberto {
-  // color: rgb(222, 82, 78);
-  color: #fea
+  color: #fea;
+  font-weight: bold;
 }
 
 .navbar {
@@ -168,4 +168,16 @@ span.alberto {
 
 #forms {
   text-align: center;
+}
+
+#send-button {
+  @media(max-width: 770px) {
+    margin-top: -88px;
+    padding: 0;
+  }
+}
+
+
+#myFooter {
+  background: rgb(71, 229, 188);
 }

@@ -16,7 +16,8 @@ h1 {
   text-shadow: 2px 1px 0px #080808; }
 
 span.alberto {
-  color: #fea; }
+  color: #fea;
+  font-weight: bold; }
 
 .navbar {
   width: 100% !important;
@@ -101,3 +102,11 @@ span.alberto {
 
 #forms {
   text-align: center; }
+
+@media (max-width: 770px) {
+  #send-button {
+    margin-top: -88px;
+    padding: 0; } }
+
+#myFooter {
+  background: #47e5bc; }
