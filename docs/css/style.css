@@ -36,7 +36,7 @@ span.alberto {
     .navbar {
       width: 100% !important;
       background: #47E5BC !important;
-      padding: 5px 0 30px 0; }
+      padding: 5px 0 35px 0; }
       .navbar #logo, .navbar #icons {
         color: #292F36 !important;
         text-align: center; }
@@ -136,3 +136,14 @@ span.alberto {
   background: #47E5BC;
   width: 100%;
   color: #232523; }
+
+.blinker {
+  color: white;
+  font-weight: 100;
+  animation: blinkers 0.95s linear infinite;
+  padding-left: 0;
+  margin-left: -15px; }
+
+@keyframes blinkers {
+  30% {
+    opacity: 0; } }
