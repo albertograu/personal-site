@@ -1,5 +1,6 @@
 body {
-  color: #f3f3f3; }
+  color: #f3f3f3;
+  font-family: "Raleway", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 h1 {
   font-weight: bold;
@@ -147,3 +148,14 @@ span.alberto {
 @keyframes blinkers {
   30% {
     opacity: 0; } }
+
+.main-paragraph {
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 400; }
+
+.picture {
+  padding-right: 70px; }
+  @media (min-width: 768px) {
+    .picture {
+      padding: 0px; } }
