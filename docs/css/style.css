@@ -11,6 +11,34 @@ h1 {
   background-size: cover;
   background-position: 0 50%; }
 
+#contact-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk-min.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0 75%;
+  height: 100%;
+  padding-bottom: 70px; }
+  #contact-container h2 {
+    letter-spacing: 7px;
+    font-weight: 600; }
+  #contact-container h4 {
+    color: gray;
+    font-weight: 200;
+    letter-spacing: 3px;
+    font-size: 15px; }
+  #contact-container .form-control {
+    background: #fff;
+    border: 1px solid #2f2f2f;
+    padding: 8px;
+    height: 80px;
+    outline: 0; }
+  #contact-container .form-control-email {
+    background: #fff;
+    border: 1px solid #2f2f2f;
+    padding: 8px;
+    height: 38px;
+    width: 75%;
+    outline: 0; }
+
 .hero-content h1, .hero-content h4 {
   color: #47e5bc;
   text-shadow: 2px 1px 0px #080808; }
@@ -76,34 +104,6 @@ span.alberto {
   text-align: center;
   height: 75%;
   font-weight: 100; }
-
-#contact-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk-min.jpg") no-repeat;
-  background-size: cover;
-  background-position: 0 75%;
-  height: 100%;
-  padding-bottom: 70px; }
-  #contact-container h2 {
-    letter-spacing: 7px;
-    font-weight: 600; }
-  #contact-container h4 {
-    color: gray;
-    font-weight: 200;
-    letter-spacing: 3px;
-    font-size: 15px; }
-  #contact-container .form-control {
-    background: #fff;
-    border: 1px solid #2f2f2f;
-    padding: 8px;
-    height: 80px;
-    outline: 0; }
-  #contact-container .form-control-email {
-    background: #fff;
-    border: 1px solid #2f2f2f;
-    padding: 8px;
-    height: 38px;
-    width: 75%;
-    outline: 0; }
 
 #send-button .btn {
   margin-top: 90px;
