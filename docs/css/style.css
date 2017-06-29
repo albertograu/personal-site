@@ -185,3 +185,7 @@ span.alberto {
 @media (max-width: 500px) {
   #picture {
     left: 21.33%; } }
+
+@media (max-width: 400px) {
+  #picture {
+    left: 11.33%; } }
