@@ -20,6 +20,9 @@ h1 {
     padding-left: 0;
     margin-left: 0; } }
 
+.text-center {
+  left: -3%; }
+
 span.alberto {
   color: #fea;
   font-weight: bold; }
