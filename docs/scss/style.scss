@@ -231,10 +231,12 @@ span.alberto {
 }
 
 
-.picture {
-  padding-right: 70px;
+#picture {
+  left: 33.33%;
+}
 
-  @media(min-width: 768px) {
-    padding: 0px;
+@media(max-width: 580px) {
+  #picture {
+    left: 11.33%;
   }
 }

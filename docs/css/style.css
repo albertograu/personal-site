@@ -154,8 +154,9 @@ span.alberto {
   font-size: 20px;
   font-weight: 400; }
 
-.picture {
-  padding-right: 70px; }
-  @media (min-width: 768px) {
-    .picture {
-      padding: 0px; } }
+#picture {
+  left: 33.33%; }
+
+@media (max-width: 580px) {
+  #picture {
+    left: 11.33%; } }
