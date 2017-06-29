@@ -7,7 +7,7 @@ h1 {
   font-size: 3.5em; }
 
 #hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/inset-2.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/inset-2-min.jpg") no-repeat;
   background-size: cover;
   background-position: 0 50%; }
 
@@ -78,7 +78,7 @@ span.alberto {
   font-weight: 100; }
 
 #contact-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk-min.jpg") no-repeat;
   background-size: cover;
   background-position: 0 75%;
   height: 100%;
