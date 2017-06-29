@@ -30,9 +30,6 @@ h1 {
   }
 }
 
-.text-center {
-  left: -3%;
-}
 
 span.alberto {
   color: #fea;
@@ -213,6 +210,13 @@ span.alberto {
   background: #47E5BC;
   width: 100%;
   color: #232523;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#paragraph {
+  left: 2%;
 }
 
 .blinker {
@@ -228,19 +232,48 @@ span.alberto {
 }
 
 
-.main-paragraph {
-  letter-spacing: 1px;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-
 #picture {
-  left: 33.33%;
+  left: 37.80%;
 }
 
-@media(max-width: 580px) {
+@media(max-width: 1199px) {
   #picture {
-    left: 11.33%;
+    left: 34.80%;
+  }
+}
+
+@media(max-width: 1000px) {
+  #picture {
+    left: 35.33%;
+  }
+}
+
+@media(max-width: 993px) {
+  #picture {
+    left: 34.33%;
+  }
+}
+
+@media(max-width: 820px) {
+  #picture {
+    left: 30.33%;
+  }
+}
+
+@media(max-width: 768px) {
+  #picture {
+    left: 25.33%;
+  }
+}
+
+@media(max-width: 610px) {
+  #picture {
+    left: 24.33%;
+  }
+}
+
+@media(max-width: 500px) {
+  #picture {
+    left: 21.33%;
   }
 }
