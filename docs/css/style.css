@@ -30,13 +30,13 @@ h1 {
     font-size: 18px; }
   #contact-container .form-control {
     background: #fff;
-    border: 2px solid #2f2f2f;
+    border: 1px solid #2f2f2f;
     padding: 10px;
     height: 100px;
     outline: 0; }
   #contact-container .form-control-email {
     background: #fff;
-    border: 2px solid #2f2f2f;
+    border: 1px solid #2f2f2f;
     padding: 10px;
     height: 38px;
     width: 100%;
