@@ -139,10 +139,13 @@ span.alberto {
 .main-paragraph {
   background: #47E5BC;
   width: 100%;
-  color: #232523;
+  color: #fff;
   letter-spacing: 1px;
   font-size: 20px;
-  font-weight: 400; }
+  font-weight: 400;
+  background: linear-gradient(#292f36, rgba(0, 0, 0, 0.81)), url("/assets/soho.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0 50%; }
 
 #paragraph {
   left: 2%; }
@@ -163,6 +166,9 @@ span.alberto {
 
 #picture {
   left: 37.80%; }
+
+.rounded-circle {
+  box-shadow: 2px 11px 12px 1px #1f2327; }
 
 @media (max-width: 1199px) {
   #picture {
