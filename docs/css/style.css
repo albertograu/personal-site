@@ -69,7 +69,7 @@ span.alberto {
       width: 100% !important;
       background: #47E5BC !important;
       padding: 5px 0 35px 0; }
-      .navbar #logo, .navbar #icons {
+      .navbar .icons {
         color: #292F36 !important;
         text-align: center; }
       .navbar .nav-item {
@@ -127,7 +127,7 @@ span.alberto {
   padding-top: 16px;
   padding-bottom: 18px; }
 
-#social-icons {
+.social-icons {
   color: #292F36 !important;
   font-size: 20px; }
 
