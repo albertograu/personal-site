@@ -7,4 +7,4 @@ Personal landing page / portfolio using Bootstrap4.
   Use `gulp` to run on `localhost:3000`
 
 # Website
-[Personal Site](http://albertograu.me)
+[Visit Personal Site](http://albertograu.me)
