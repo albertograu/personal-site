@@ -1,3 +1,7 @@
+html {
+  width: 100%;
+}
+
 body {
   color: #f3f3f3;
   font-family: "Raleway", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -31,7 +35,7 @@ h1 {
     color: gray;
     font-weight: 200;
     letter-spacing: 3px;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .form-control {
@@ -214,8 +218,14 @@ span.alberto {
   font-weight: 400;
 }
 
+
+
 #paragraph {
   left: 2%;
+}
+
+.email {
+  font-weight: 600;
 }
 
 .blinker {
@@ -225,6 +235,7 @@ span.alberto {
   padding-left: 0;
   margin-left: -15px;
 }
+
 
 @keyframes blinkers {
   30% { opacity: 0; }
