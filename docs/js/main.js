@@ -54,3 +54,6 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap";
   document.body.appendChild(css);
 };
+
+
+console.log('Looking behind the scenes eh? Thats cool, if you have any questions or comments feel free to email me --> alberto.grau@icloud.com');
