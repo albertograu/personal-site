@@ -34,6 +34,8 @@ h1 {
     padding: 10px;
     height: 100px;
     outline: 0; }
+  #contact-container .form-control:focus {
+    border: 1px solid #fff !important; }
   #contact-container .form-control-email {
     background: #fff;
     border: 1px solid #2f2f2f;
@@ -41,6 +43,8 @@ h1 {
     height: 38px;
     width: 100%;
     outline: 0; }
+  #contact-container .form-control-email:focus {
+    border: 1px solid #fff !important; }
 
 .hero-content h1, .hero-content h4 {
   color: #47e5bc;
@@ -112,7 +116,11 @@ span.alberto {
   margin-top: 108px;
   padding: 10px;
   color: #000;
-  border: 1px solid #232523; }
+  border: 1px solid #232523;
+  cursor: pointer; }
+
+#send-button .btn:hover {
+  background: #26b38e !important; }
 
 @media (max-width: 768px) {
   #send-button {
@@ -151,7 +159,9 @@ span.alberto {
   left: 2%; }
 
 .email {
-  font-weight: 600; }
+  font-weight: 600;
+  text-decoration: underline;
+  letter-spacing: 3px; }
 
 .blinker {
   color: white;
