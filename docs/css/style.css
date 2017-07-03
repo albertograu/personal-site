@@ -198,7 +198,11 @@ span.alberto {
 
 @media (max-width: 500px) {
   #picture {
-    left: 21.33%; } }
+    left: 21.33%; }
+  .email {
+    font-weight: 600;
+    text-decoration: underline;
+    letter-spacing: 1px; } }
 
 @media (max-width: 400px) {
   #picture {
