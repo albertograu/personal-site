@@ -113,19 +113,13 @@ span.alberto {
   font-weight: 100; }
 
 #send-button .btn {
-  margin-top: 108px;
-  padding: 10px;
   color: #000;
   border: 1px solid #232523;
   cursor: pointer; }
 
 #send-button .btn:hover {
-  background: #26b38e !important; }
-
-@media (max-width: 768px) {
-  #send-button {
-    margin-top: -100px;
-    padding: 12px; } }
+  background: #26b38e !important;
+  color: #fff; }
 
 #forms {
   text-align: center; }
@@ -138,6 +132,9 @@ span.alberto {
 .social-icons {
   color: #292F36 !important;
   font-size: 20px; }
+
+.social-icons:hover {
+  color: #fff !important; }
 
 .main-paragraph {
   background: #47E5BC;

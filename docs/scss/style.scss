@@ -10,7 +10,6 @@ body {
 h1 {
   font-weight: bold;
   font-size: 3.5em;
-
 }
 
 #hero {
@@ -177,21 +176,13 @@ span.alberto {
 
 #send-button {
   .btn {
-    margin-top: 108px;
-    padding: 10px;
     color: #000;
     border: 1px solid #232523;
     cursor: pointer;
   }
   .btn:hover {
     background: #26b38e !important;
-  }
-
-
-  @media(max-width: 768px) {
-    margin-top: -100px;
-    padding: 12px;
-
+    color: #fff;
   }
 }
 
@@ -211,6 +202,10 @@ span.alberto {
 .social-icons {
   color: #292F36 !important;
   font-size: 20px;
+}
+
+.social-icons:hover {
+  color: #fff !important;
 }
 
 .main-paragraph {
