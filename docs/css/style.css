@@ -71,8 +71,7 @@ span.alberto {
   @media (max-width: 574px) {
     .navbar {
       width: 100% !important;
-      background: #47E5BC !important;
-      padding: 5px 0 35px 0; }
+      background: #47E5BC !important; }
       .navbar .icons {
         color: #292F36 !important;
         text-align: center; }
