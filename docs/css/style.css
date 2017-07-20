@@ -34,6 +34,8 @@ h1 {
     padding: 10px;
     height: 100px;
     outline: 0; }
+  #contact-container .form-control::selection {
+    background: rgba(71, 229, 188, 0.82); }
   #contact-container .form-control:focus {
     border: 1px solid #fff !important; }
   #contact-container .form-control-email {
@@ -45,6 +47,8 @@ h1 {
     outline: 0; }
   #contact-container .form-control-email:focus {
     border: 1px solid #fff !important; }
+  #contact-container .form-control-email::selection {
+    background: rgba(71, 229, 188, 0.82); }
 
 .hero-content h1, .hero-content h4 {
   color: #47e5bc;
@@ -145,6 +149,9 @@ span.alberto {
   background-size: cover;
   background-position: 0 50%; }
 
+p::selection {
+  background: rgba(71, 229, 188, 0.82); }
+
 #paragraph {
   left: 2%; }
 
@@ -152,6 +159,9 @@ span.alberto {
   font-weight: 600;
   text-decoration: underline;
   letter-spacing: 3px; }
+
+.email::selection {
+  background: rgba(71, 229, 188, 0.82); }
 
 .blinker {
   color: white;
