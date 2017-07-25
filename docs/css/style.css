@@ -119,9 +119,12 @@ span.alberto {
   border: 1px solid #232523;
   cursor: pointer; }
 
-#send-button .btn:hover {
-  background: #26b38e !important;
-  color: #fff; }
+#send-button .btn:hover:enabled {
+  background: linear-gradient(#47E5BC, #11FFBD);
+  text-decoration: none; }
+
+#send-button .btn:active {
+  transform: translateY(1.5px); }
 
 #forms {
   text-align: center; }
@@ -150,6 +153,9 @@ span.alberto {
   background-position: 0 70%; }
 
 p::selection {
+  background: rgba(71, 229, 188, 0.82); }
+
+.highlight::selection {
   background: rgba(71, 229, 188, 0.82); }
 
 #paragraph {
