@@ -147,7 +147,7 @@ span.alberto {
   font-weight: 400;
   background: linear-gradient(#292f36, rgba(0, 0, 0, 0.81)), url("/assets/soho.jpg") no-repeat;
   background-size: cover;
-  background-position: 0 50%; }
+  background-position: 0 70%; }
 
 p::selection {
   background: rgba(71, 229, 188, 0.82); }
@@ -207,6 +207,8 @@ p::selection {
 @media (max-width: 500px) {
   #picture {
     left: 21.33%; }
+  .feature-content, .feature-wrapper {
+    display: none; }
   .email {
     font-weight: 600;
     text-decoration: underline;
