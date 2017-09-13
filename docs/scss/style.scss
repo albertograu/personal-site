@@ -261,18 +261,81 @@ p::selection {
 
 
 .work-container {
-  height: 800px;
-  border: 2px solid yellow;
+  padding: 6em 1em 2em 1em;
+  // border: 2px solid yellow;
 
   h2 {
     font-weight: bold;
     letter-spacing: 7px;
-    border: 1px solid green;
+    // border: 1px solid green;
     padding-bottom: 2em;
   }
 
+}
+
+.first-row {
+  // border: 2px solid red;
+  padding: 5em 0;
+
   .macbook {
-    width: 80%;
+    width: 100%;
+  }
+
+  .macbook-container {
+    // border: 1px solid blue;
+  }
+}
+
+.content-container {
+  // border: 1px solid red;
+  padding-top: 3em;
+
+  .work-title {
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 17px;
+    letter-spacing: 7px;
+  }
+
+  .work-description {
+    line-height: 35px;
+    font-size: 20px;
+  }
+
+}
+
+
+
+.second-row {
+  padding: 2em 0 2em 0;
+
+  .iphone-container {
+    // border: 1px solid purple;
+    align-content: center;
+  }
+
+  .iphone {
+    width: 59%;
+    margin-left: 9em;
+  }
+
+  .content-container {
+    // border: 1px solid red;
+    padding: 5em 0 2em 2em;
+    margin-left: 4em;
+
+    .work-title {
+      font-weight: normal;
+      letter-spacing: 7px;
+      text-align: center;
+      padding-bottom: 17px;
+    }
+
+    .work-description {
+      line-height: 35px;
+      font-size: 20px;
+    }
+
   }
 
 }
