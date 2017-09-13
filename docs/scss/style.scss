@@ -257,6 +257,33 @@ p::selection {
 }
 
 
+
+
+
+.work-container {
+  height: 800px;
+  border: 2px solid yellow;
+
+  h2 {
+    font-weight: bold;
+    letter-spacing: 7px;
+    border: 1px solid green;
+    padding-bottom: 2em;
+  }
+
+  .macbook {
+    width: 80%;
+  }
+
+}
+
+
+
+
+
+
+
+
 @keyframes blinkers {
   30% { opacity: 0; }
 }
