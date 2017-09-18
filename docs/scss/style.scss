@@ -261,8 +261,7 @@ p::selection {
 
 
 .work-container {
-  padding: 6em 1em 2em 1em;
-  // border: 2px solid yellow;
+  padding: 6em 4em;
 
   h2 {
     font-weight: bold;
@@ -275,7 +274,7 @@ p::selection {
 
 .first-row {
   // border: 2px solid red;
-  padding: 5em 0;
+  padding: 2em .9em;
 
   .macbook {
     width: 100%;
@@ -289,6 +288,7 @@ p::selection {
 .content-container {
   // border: 1px solid red;
   padding-top: 3em;
+  padding-bottom: 3em;
 
   .work-title {
     font-weight: normal;
@@ -307,7 +307,8 @@ p::selection {
 
 
 .second-row {
-  padding: 2em 0 2em 0;
+  padding: 6em 1em 0 1em;
+  // border: 2px solid yellow;
 
   .iphone-container {
     // border: 1px solid purple;
@@ -315,14 +316,14 @@ p::selection {
   }
 
   .iphone {
-    width: 59%;
+    max-width: 55%;
     margin-left: 9em;
   }
 
   .content-container {
     // border: 1px solid red;
-    padding: 5em 0 2em 2em;
-    margin-left: 4em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 
     .work-title {
       font-weight: normal;

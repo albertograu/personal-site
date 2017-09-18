@@ -177,19 +177,20 @@ p::selection {
   margin-left: -15px; }
 
 .work-container {
-  padding: 6em 1em 2em 1em; }
+  padding: 6em 4em; }
   .work-container h2 {
     font-weight: bold;
     letter-spacing: 7px;
     padding-bottom: 2em; }
 
 .first-row {
-  padding: 5em 0; }
+  padding: 2em .9em; }
   .first-row .macbook {
     width: 100%; }
 
 .content-container {
-  padding-top: 3em; }
+  padding-top: 3em;
+  padding-bottom: 3em; }
   .content-container .work-title {
     font-weight: normal;
     text-align: center;
@@ -200,15 +201,15 @@ p::selection {
     font-size: 20px; }
 
 .second-row {
-  padding: 2em 0 2em 0; }
+  padding: 6em 1em 0 1em; }
   .second-row .iphone-container {
     align-content: center; }
   .second-row .iphone {
-    width: 59%;
+    max-width: 55%;
     margin-left: 9em; }
   .second-row .content-container {
-    padding: 5em 0 2em 2em;
-    margin-left: 4em; }
+    padding-top: 3em;
+    padding-bottom: 3em; }
     .second-row .content-container .work-title {
       font-weight: normal;
       letter-spacing: 7px;
