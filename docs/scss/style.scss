@@ -273,20 +273,16 @@ p::selection {
 }
 
 .first-row {
-  // border: 2px solid red;
   padding: 2em .9em;
 
   .macbook {
     width: 100%;
   }
 
-  .macbook-container {
-    // border: 1px solid blue;
-  }
+
 }
 
 .content-container {
-  // border: 1px solid red;
   padding-top: 3em;
   padding-bottom: 3em;
 
@@ -304,24 +300,28 @@ p::selection {
 
 }
 
+// @media(min-width: 800px) {
+//   .icons {
+//     border: 1px solid red;
+//     font-size: 1px;
+//   }
+// }
+
 
 
 .second-row {
   padding: 6em 1em 0 1em;
-  // border: 2px solid yellow;
 
   .iphone-container {
-    // border: 1px solid purple;
-    align-content: center;
+    // align-content: center;
   }
 
   .iphone {
-    max-width: 55%;
-    margin-left: 9em;
+    max-width: 59%;
+    margin-left: 10em;
   }
 
   .content-container {
-    // border: 1px solid red;
     padding-top: 3em;
     padding-bottom: 3em;
 
