@@ -50,13 +50,12 @@ h1 {
 
   .form-control:focus {
     border: 1px solid #fff !important;
-
   }
 
   .form-control-email {
     background: #fff;
     border: 1px solid #2f2f2f;
-    padding: 10px;
+    padding: 1em;
     height: 38px;
     width: 100%;
     outline: 0;
@@ -178,6 +177,7 @@ span.alberto {
 #send-button {
   .btn {
     color: #000;
+    padding: .8em;
     border: 1px solid #232523;
     cursor: pointer;
   }
@@ -185,6 +185,7 @@ span.alberto {
     background: linear-gradient(#47E5BC
   , #11FFBD);
     text-decoration: none;
+    color: white;
   }
   .btn:active {
     transform: translateY(1.5px);
@@ -203,6 +204,9 @@ span.alberto {
   padding-bottom: 18px;
 }
 
+.icon-group {
+  border: 2px solid red;
+}
 
 .social-icons {
   color: #292F36 !important;
@@ -276,6 +280,10 @@ p::selection {
 
 }
 
+*::selection {
+  background: rgba(71, 229, 188, 0.82);
+}
+
 .first-row {
 
   .macbook {
@@ -331,7 +339,8 @@ p::selection {
 
 .iphone-container {
   width: 100%;
-  padding-left: 9em;
+
+  text-align: center;
 
   .iphone {
     width: 70%;
@@ -339,19 +348,20 @@ p::selection {
 
 }
 
-@media(max-width: 700px) {
 
-  .iphone-container{
-    width: 99%;
-    padding: 3em 0 3em 1em;
-    margin-left: 5em;
-  }
-
+.cta {
+  padding: 7em 0 0 0;
+  color: #80807d;
+  letter-spacing: 7px;
+  font-size: 17px;
+  font-weight: 100 !important;
+  text-align: center;
 }
 
-
-
-
+.link:hover {
+  color: #54f6ca;
+  text-decoration: none;
+}
 
 
 

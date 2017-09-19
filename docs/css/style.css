@@ -41,7 +41,7 @@ h1 {
   #contact-container .form-control-email {
     background: #fff;
     border: 1px solid #2f2f2f;
-    padding: 10px;
+    padding: 1em;
     height: 38px;
     width: 100%;
     outline: 0; }
@@ -116,12 +116,14 @@ span.alberto {
 
 #send-button .btn {
   color: #000;
+  padding: .8em;
   border: 1px solid #232523;
   cursor: pointer; }
 
 #send-button .btn:hover:enabled {
   background: linear-gradient(#47E5BC, #11FFBD);
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
 
 #send-button .btn:active {
   transform: translateY(1.5px); }
@@ -133,6 +135,9 @@ span.alberto {
   background: #47e5bc;
   padding-top: 16px;
   padding-bottom: 18px; }
+
+.icon-group {
+  border: 2px solid red; }
 
 .social-icons {
   color: #292F36 !important;
@@ -187,6 +192,9 @@ p::selection {
       padding: 3em 0 1em 0;
       margin: 0; } }
 
+*::selection {
+  background: rgba(71, 229, 188, 0.82); }
+
 .first-row .macbook {
   width: 100%; }
 
@@ -220,15 +228,21 @@ p::selection {
 
 .iphone-container {
   width: 100%;
-  padding-left: 9em; }
+  text-align: center; }
   .iphone-container .iphone {
     width: 70%; }
 
-@media (max-width: 700px) {
-  .iphone-container {
-    width: 99%;
-    padding: 3em 0 3em 1em;
-    margin-left: 5em; } }
+.cta {
+  padding: 7em 0 0 0;
+  color: #80807d;
+  letter-spacing: 7px;
+  font-size: 17px;
+  font-weight: 100 !important;
+  text-align: center; }
+
+.link:hover {
+  color: #54f6ca;
+  text-decoration: none; }
 
 @keyframes blinkers {
   30% {
