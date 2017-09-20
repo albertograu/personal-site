@@ -12,7 +12,8 @@ h1 {
 #hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/inset-2-min.jpg") no-repeat;
   background-size: cover;
-  background-position: 0 50%; }
+  background-position: 0 50%;
+  height: 87.5vh; }
 
 #contact-container {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk-min.jpg") no-repeat;
