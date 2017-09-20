@@ -16,7 +16,7 @@ h1 {
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/assets/inset-2-min.jpg') no-repeat;
   background-size: cover;
   background-position: 0 50%;
-  height: 87.5vh;
+  height: 100%;
 }
 
 #contact-container {
@@ -176,21 +176,28 @@ span.alberto {
 
 
 #send-button {
+
   .btn {
+
     color: #000;
     padding: .8em;
     border: 1px solid #232523;
     cursor: pointer;
   }
-  .btn:hover:enabled {
-    background: linear-gradient(#47E5BC
-  , #11FFBD);
-    text-decoration: none;
-    color: white;
+
+  @media(min-width: 400px) {
+    .btn:hover:enabled {
+      background: linear-gradient(#47E5BC
+    , #11FFBD);
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn:active {
+      transform: translateY(1.5px);
+    }
   }
-  .btn:active {
-    transform: translateY(1.5px);
-  }
+
 }
 
 
@@ -340,6 +347,10 @@ p::selection {
 
   }
 
+  @media(max-width: 400px) {
+    padding: 1em 0 0 0;
+  }
+
 }
 
 .iphone-container {
@@ -349,6 +360,10 @@ p::selection {
 
   .iphone {
     width: 70%;
+  }
+
+  @media(max-width:400px) {
+    padding: 2em 0 0 2.8em;
   }
 
 }

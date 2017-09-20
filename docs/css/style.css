@@ -13,7 +13,7 @@ h1 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/inset-2-min.jpg") no-repeat;
   background-size: cover;
   background-position: 0 50%;
-  height: 87.5vh; }
+  height: 100%; }
 
 #contact-container {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk-min.jpg") no-repeat;
@@ -121,13 +121,13 @@ span.alberto {
   border: 1px solid #232523;
   cursor: pointer; }
 
-#send-button .btn:hover:enabled {
-  background: linear-gradient(#47E5BC, #11FFBD);
-  text-decoration: none;
-  color: white; }
-
-#send-button .btn:active {
-  transform: translateY(1.5px); }
+@media (min-width: 400px) {
+  #send-button .btn:hover:enabled {
+    background: linear-gradient(#47E5BC, #11FFBD);
+    text-decoration: none;
+    color: white; }
+  #send-button .btn:active {
+    transform: translateY(1.5px); } }
 
 #forms {
   text-align: center; }
@@ -230,12 +230,18 @@ p::selection {
     .second-row .content-container .work-description {
       line-height: 35px;
       font-size: 20px; }
+  @media (max-width: 400px) {
+    .second-row {
+      padding: 1em 0 0 0; } }
 
 .iphone-container {
   width: 100%;
   text-align: center; }
   .iphone-container .iphone {
     width: 70%; }
+  @media (max-width: 400px) {
+    .iphone-container {
+      padding: 2em 0 0 2.8em; } }
 
 .cta {
   padding: 7em 0 0 0;
