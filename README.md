@@ -1,4 +1,4 @@
-Personal landing page / portfolio using Bootstrap4.
+Personal landing page / portfolio using Bootstrap4 and Sass.
 
 # Bootstrap4 Version
  `4.0.0-alpha.6`
