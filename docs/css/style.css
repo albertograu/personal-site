@@ -182,6 +182,10 @@ p::selection {
   margin-left: -15px; }
 
 .work-container {
+  background-image: linear-gradient(#292f36, rgba(0, 0, 0, 0.41)), url("./../assets/dark-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 6em 4em; }
   .work-container h2 {
     font-weight: bold;
