@@ -1,56 +1,59 @@
-const TextTyper = function(txtElement, words, wait = 3000) {
-  this.txtElement = txtElement;
-  this.words = words;
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
   this.txt = '';
-  this.wordIndex = 0;
-  this.wait = parseInt(wait, 10);
-  this.type();
-  this.isDeleting = true;
-}
-TextTyper.prototype.type = function() {
-  // Current index of word
-  const current = this.wordIndex % this.words.lenght;
-  // Get text of current word
-  const fullTxt = this.words[current];
+  this.tick();
+  this.isDeleting = false;
+};
 
-  // Check if deleting word
-  if(this.isDeleting) {
-    // remove character
-    this.txt = fullTxt.substring(0, this.txt.lenght - 1);
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
   } else {
-    // add character
-    this.txt = fullTxt.substring(0, this.txt.lenght + 1);
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.txtElement.innerHTML = `<span>${this.txt}</span>`
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
-  // Initial Type Speed
-  let typeSpeed = 300;
-  if(this.isDeleting) {
-    typeSpeed = typeSpeed / 2;
-  }
+  var that = this;
+  var delta = 300 - Math.random() * 100;
 
-  // if word is complete
-  if(!this.isDeleting && this.txt === fullTxt) {
-    typeSpeed = this.wait;
-    // set delete to true
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
     this.isDeleting = true;
-  } else if(this.isDeleting && this.txt === '') {
+  } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
-    // move to next word
-    this.wordIndex++;
-    // pause before start typing
-    typeSpeed = 500;
+    this.loopNum++;
+    delta = 500;
   }
 
-  setTimeout(() => this.type(), 500)
-}
-// Init on DOM Load
-document.addEventListener('DOMContentLoaded', init);
-function init() {
-  const txtElement = document.querySelector('.txt-type');
-  const words = JSON.parse(txtElement.getAttribute('data-words'));
-  const wait = txtElement.getAtribute('data-wait');
-  // Init text typer
-  new TextTyper(txtElement, words, wait);
-}
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap";
+  document.body.appendChild(css);
+};
+
+
+console.log('Looking behind the scenes eh? Thats cool, if you have any questions or comments feel free to email me --> alberto.grau@icloud.com');
