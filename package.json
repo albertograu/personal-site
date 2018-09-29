@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A personal landing page / portfolio",
   "main": "index.js",
   "scripts": {
@@ -17,11 +17,14 @@
   },
   "homepage": "https://github.com/Albertico88/glowing-octo-succotash#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.3.1",
+    "natives": "^1.1.5",
+    "popper.js": "^1.14.4"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.12",
+    "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^4.0.1"
   }
 }
