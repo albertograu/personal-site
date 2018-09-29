@@ -10,18 +10,12 @@ h1 {
   font-size: 3.5em; }
 
 #hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/assets/inset-2-min.jpg") no-repeat;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/inset-2-min.jpg") no-repeat;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/inset-2-min.jpg") no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/inset-2-min.jpg") no-repeat;
   background-size: cover;
   background-position: 0 50%;
   height: 100%; }
 
 #contact-container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/assets/coffee-desk-min.jpg") no-repeat;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk-min.jpg") no-repeat;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk-min.jpg") no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/coffee-desk-min.jpg") no-repeat;
   background-size: cover;
   background-position: 0 75%;
@@ -41,8 +35,6 @@ h1 {
     padding: 10px;
     height: 100px;
     outline: 0; }
-  #contact-container .form-control::-moz-selection {
-    background: rgba(71, 229, 188, 0.82); }
   #contact-container .form-control::selection {
     background: rgba(71, 229, 188, 0.82); }
   #contact-container .form-control:focus {
@@ -56,8 +48,6 @@ h1 {
     outline: 0; }
   #contact-container .form-control-email:focus {
     border: 1px solid #fff !important; }
-  #contact-container .form-control-email::-moz-selection {
-    background: rgba(71, 229, 188, 0.82); }
   #contact-container .form-control-email::selection {
     background: rgba(71, 229, 188, 0.82); }
 
@@ -133,16 +123,11 @@ span.alberto {
 
 @media (min-width: 400px) {
   #send-button .btn:hover:enabled {
-    background: -webkit-gradient(linear, left top, left bottom, from(#47E5BC), to(#11FFBD));
-    background: -webkit-linear-gradient(#47E5BC, #11FFBD);
-    background: -o-linear-gradient(#47E5BC, #11FFBD);
     background: linear-gradient(#47E5BC, #11FFBD);
     text-decoration: none;
     color: white; }
   #send-button .btn:active {
-    -webkit-transform: translateY(1.5px);
-        -ms-transform: translateY(1.5px);
-            transform: translateY(1.5px); } }
+    transform: translateY(1.5px); } }
 
 #forms {
   text-align: center; }
@@ -169,20 +154,11 @@ span.alberto {
   letter-spacing: 1px;
   font-size: 20px;
   font-weight: 400;
-  background: -webkit-gradient(linear, left top, left bottom, from(#292f36), to(rgba(0, 0, 0, 0.81))), url("/assets/soho.jpg") no-repeat;
-  background: -webkit-linear-gradient(#292f36, rgba(0, 0, 0, 0.81)), url("/assets/soho.jpg") no-repeat;
-  background: -o-linear-gradient(#292f36, rgba(0, 0, 0, 0.81)), url("/assets/soho.jpg") no-repeat;
   background: linear-gradient(#292f36, rgba(0, 0, 0, 0.81)), url("/assets/soho.jpg") no-repeat;
   background-size: cover;
   background-position: 0 70%; }
 
-p::-moz-selection {
-  background: rgba(71, 229, 188, 0.82); }
-
 p::selection {
-  background: rgba(71, 229, 188, 0.82); }
-
-.highlight::-moz-selection {
   background: rgba(71, 229, 188, 0.82); }
 
 .highlight::selection {
@@ -196,24 +172,17 @@ p::selection {
   text-decoration: underline;
   letter-spacing: 3px; }
 
-.email::-moz-selection {
-  background: rgba(71, 229, 188, 0.82); }
-
 .email::selection {
   background: rgba(71, 229, 188, 0.82); }
 
 .blinker {
   color: white;
   font-weight: 100;
-  -webkit-animation: blinkers 0.95s linear infinite;
-          animation: blinkers 0.95s linear infinite;
+  animation: blinkers 0.95s linear infinite;
   padding-left: 0;
   margin-left: -15px; }
 
 .work-container {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#292f36), to(rgba(0, 0, 0, 0.41))), url("./../assets/dark-bg.jpg");
-  background-image: -webkit-linear-gradient(#292f36, rgba(0, 0, 0, 0.41)), url("./../assets/dark-bg.jpg");
-  background-image: -o-linear-gradient(#292f36, rgba(0, 0, 0, 0.41)), url("./../assets/dark-bg.jpg");
   background-image: linear-gradient(#292f36, rgba(0, 0, 0, 0.41)), url("./../assets/dark-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,9 +196,6 @@ p::selection {
     .work-container {
       padding: 3em 0 1em 0;
       margin: 0; } }
-
-*::-moz-selection {
-  background: rgba(71, 229, 188, 0.82); }
 
 *::selection {
   background: rgba(71, 229, 188, 0.82); }
@@ -289,10 +255,6 @@ p::selection {
   color: #54f6ca;
   text-decoration: none; }
 
-@-webkit-keyframes blinkers {
-  30% {
-    opacity: 0; } }
-
 @keyframes blinkers {
   30% {
     opacity: 0; } }
@@ -301,8 +263,7 @@ p::selection {
   left: 37.80%; }
 
 .rounded-circle {
-  -webkit-box-shadow: 2px 11px 12px 1px #1f2327;
-          box-shadow: 2px 11px 12px 1px #1f2327; }
+  box-shadow: 2px 11px 12px 1px #1f2327; }
 
 @media (max-width: 1199px) {
   #picture {
