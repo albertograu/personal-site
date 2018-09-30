@@ -46,7 +46,7 @@ TextTyper.prototype.type = function() {
   setTimeout(() => this.type(), typeSpeed)
 }
 // Init on DOM Load
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('load', init);
 function init() {
   const txtElement = document.querySelector('.txt-type');
   const words = JSON.parse(txtElement.getAttribute('data-words'));
