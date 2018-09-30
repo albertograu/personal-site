@@ -44,19 +44,18 @@
           </nav>
         </div>
 
-<!-- Hero Content -->
         <div class="row hero-content pt-md-6 pb-md-6 pt-5 pb-5">
           <div class="col-md-12">
             <h1 class="text-center text-md-left pt-4">
               <span
-               class="txt-rotate"
-               data-period="1000"
-               data-rotate='["", "Hello", "Hola", "Bonjour", "Ciao", "Hallo", "Ni Hao", "Konnichiwa"]'>
+               class="txt-type"
+               data-wait="3000"
+               data-words="['Hello', 'Hola', 'Bonjour', 'Ciao', 'Hallo', 'Ni Hao', 'Konnichiwa']">
               </span>
               <span class="blinker">|</span>
             </h1>
             <h4 class="text-center text-md-left">
-              My name is <span class="alberto">Alberto</span> and I'm a front-end web developer.
+              My name is <span class="alberto">Alberto</span> and I'm a web developer.
             </h4>
           </div>
         </div>
@@ -104,7 +103,6 @@
       </div>
     </div>
 
-
   <!-- Main Paragraph -->
     <div class="container main-paragraph">
       <!-- Picture -->
@@ -116,7 +114,6 @@
         </div>
       </div>
 
-      <!-- Paragraph Starts -->
       <div class="row">
         <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2 mb-5 mt-5 pb-5 pt-1" id="paragraph">
           <p>
@@ -128,76 +125,54 @@
       </div>
     </div>
 
-
     <!-- Work Samples -->
     <div class="work-container">
-
       <div class="container col-12 text-center">
         <h2 class="text-uppercase highlight">Recent Work</h2>
       </div>
-
       <div class="row first-row col-12">
-
         <div class="macbook-container col-lg-6 col-sm-12">
           <img src="./assets/blocjams-macbookpro.png" alt="macbook" class="macbook">
         </div>
-
         <div class="content-container col-lg-6 col-sm-12">
           <h2 class="work-title">Bloc Jams</h2>
           <p class="work-description">A dynamic and responsive music web application with albums and collections, built using HTML, CSS, vanilla javascript, Grunt and later re-written using AngularJS framework.</p>
-
           <div class="row icons justify-content-center pt-4">
             <img src="./assets/icons-blocjams.svg" alt="icons" class="blocjams-icons">
           </div>
         </div>
-
       </div>
 
-
       <div class="row second-row col-12">
-
         <div class="content-container col-lg-6">
           <h2 class="work-title">Boxrico</h2>
           <p class="work-description">A responsive ecommerce landing page complete with feature descriptions, about section and multiple calls to action. Built using HTML, Sass, Gulp, Sketch and hosted on Github Pages.
             <a href="https://albertico88.github.io/responsive-naqui/" target="_blank" class="link">View Demo</a>
           </p>
-
           <div class="row icons justify-content-center pt-4">
             <img src="./assets/icons-boxrico.svg" alt="icons" class="boxrico-icons">
           </div>
         </div>
-
         <div class="iphone-container col-lg-6 col-sm-12">
           <img src="../assets/boxrico-iphone.png" alt="iPhone" class="iphone">
         </div>
-
       </div>
-
       <div class="col-12 pt-md-4 pb-md-5">
         <h4 class="cta">Let's build something awesome!</h4>
       </div>
-
     </div>
-
-
-
-
-
-
     <!-- Form Section -->
     <div id="contact-container" class="pt-lg-6 pb-lg-6 pt-6">
       <div class="container text-center">
         <h2 class="text-uppercase highlight">Send Me An Email</h2>
         <h4 class="text-uppercase highlight">I'll get back to you ASAP</h4>
 
-        <form method="POST" action="https://formspree.io/alberto.grau@icloud.com">
+        <form method="POST" action="https://formspree.io/albertograumargarida@gmail.com">
           <div class="form-group row pt-lg-5 pb-lg-1 pt-5" id="forms">
             <div class="col-sm-12 col-md-8 offset-md-2">
               <input type="email" name="_replyto" class="form-control-email mb-3" placeholder="Your email address" required>
               <textarea name="message" class="form-control mb-4" placeholder="Your message" required></textarea>
             </div>
-
-            <!-- Button -->
           </div>
           <div class="col-lg-4 offset-lg-4 col-md-4 offset-md-4 col-sm-9 offset-sm-1 pt-lg-0 pb-5" id="send-button">
             <button class="btn btn-primary text-uppercase btn-block text-center bg-primary" type="submit" value="Send">
@@ -207,7 +182,6 @@
         </form>
       </div>
     </div>
-
 
     <!-- Footer -->
     <footer id="myFooter">
@@ -238,7 +212,6 @@
       </div>
     </footer>
 
-
   <!-- SCRIPTS -->
   <!-- Google Analytics -->
   <script>
@@ -250,9 +223,11 @@
     ga('send', 'pageview');
   </script>
   <!-- End Google Analytics -->
+  <!-- jQuery -->
   <script src="/js/jquery.min.js"></script>
   <script src="/js/tether.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
+  <!-- Text rotate -->
   <script async src="/js/main.js"></script>
   </body>
 </html>
