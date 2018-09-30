@@ -5,21 +5,21 @@ const TextTyper = function(txtElement, words, wait = 3000) {
   this.wordIndex = 0;
   this.wait = parseInt(wait, 10);
   this.type();
-  this.isDeleting = true;
+  this.isDeleting = false;
 }
 TextTyper.prototype.type = function() {
   // Current index of word
-  const current = this.wordIndex % this.words.lenght;
+  const current = this.wordIndex % this.words.length;
   // Get text of current word
   const fullTxt = this.words[current];
 
   // Check if deleting word
   if(this.isDeleting) {
     // remove character
-    this.txt = fullTxt.substring(0, this.txt.lenght - 1);
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
   } else {
     // add character
-    this.txt = fullTxt.substring(0, this.txt.lenght + 1);
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
   this.txtElement.innerHTML = `<span>${this.txt}</span>`
@@ -27,7 +27,7 @@ TextTyper.prototype.type = function() {
   // Initial Type Speed
   let typeSpeed = 300;
   if(this.isDeleting) {
-    typeSpeed = typeSpeed / 2;
+    typeSpeed /= 2;
   }
 
   // if word is complete
@@ -43,14 +43,14 @@ TextTyper.prototype.type = function() {
     typeSpeed = 500;
   }
 
-  setTimeout(() => this.type(), 500)
+  setTimeout(() => this.type(), typeSpeed)
 }
 // Init on DOM Load
 document.addEventListener('DOMContentLoaded', init);
 function init() {
   const txtElement = document.querySelector('.txt-type');
   const words = JSON.parse(txtElement.getAttribute('data-words'));
-  const wait = txtElement.getAtribute('data-wait');
+  const wait = txtElement.getAttribute('data-wait');
   // Init text typer
   new TextTyper(txtElement, words, wait);
 };
