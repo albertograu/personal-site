@@ -10,7 +10,7 @@ Personal landing page / portfolio using Bootstrap4 and Sass.
 
 
 ## Website
-[Visit Site](https://albertograu.me)
+[Visit Site](https://albertograu.dev)
 
 
 ## GitHub apps
