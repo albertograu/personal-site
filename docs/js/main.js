@@ -25,7 +25,7 @@ TextTyper.prototype.type = function() {
   this.txtElement.innerHTML = `<span>${this.txt}</span>`
 
   // Initial Type Speed
-  let typeSpeed = 300;
+  let typeSpeed = 150;
   if(this.isDeleting) {
     typeSpeed /= 2;
   }
