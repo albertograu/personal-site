@@ -27,12 +27,6 @@
     />
     <link rel="stylesheet" href="/css/bootstrap.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-      function onSubmit() {
-        document.getElementById('myForm').submit();
-      }
-    </script>
   </head>
 
   <body>
@@ -244,7 +238,7 @@
         <h4 class="text-uppercase highlight">I'll get back to you ASAP</h4>
 
         <form method="POST" action="https://formspree.io/f/myyldyeo">
-          <div class="form-group row pt-lg-5 pb-lg-1 pt-5" id="forms">
+          <div class="form-group row pt-lg-5 pb-lg-1 pt-5" id="myForm">
             <div class="col-sm-12 col-md-8 offset-md-2">
               <input
                 type="email"
@@ -294,7 +288,13 @@
       </div>
     </footer>
     <!-- SCRIPTS -->
-    <!-- End Google Analytics -->
+    <!-- recaptcha -->
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcCJDEqAAAAAG8IXGutO03hsbljzNQNhVmefd_K"></script>
+    <script>
+      function onSubmit() {
+        document.getElementById('myForm').submit();
+      }
+    </script>
     <!-- jQuery -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/tether.min.js"></script>
