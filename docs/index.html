@@ -295,31 +295,38 @@
       </div>
     </footer>
     <!-- SCRIPTS -->
-    <!-- recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcCJDEqAAAAAG8IXGutO03hsbljzNQNhVmefd_K"></script>
-    <script>
-      grecaptcha.ready(function () {
-        grecaptcha
-          .execute('6LcCJDEqAAAAAG8IXGutO03hsbljzNQNhVmefd_K', {
-            action: 'submit',
-          })
-          .then(function (token) {
-            // Add the token to the form
-            var recaptchaResponse = document.createElement('input');
-            recaptchaResponse.setAttribute('type', 'hidden');
-            recaptchaResponse.setAttribute('name', 'g-recaptcha-response');
-            recaptchaResponse.setAttribute('value', token);
-            document.getElementById('myForm').appendChild(recaptchaResponse);
-
-            // Submit the form
-            document.getElementById('myForm').submit();
-          });
-      });
-    </script>
     <!-- jQuery -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/tether.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/main.js"></script>
+    <!-- recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcCJDEqAAAAAG8IXGutO03hsbljzNQNhVmefd_K"></script>
+    <script>
+      function onSubmit(token) {
+        var form = document.getElementById('myForm');
+        var recaptchaResponse = document.createElement('input');
+        recaptchaResponse.setAttribute('type', 'hidden');
+        recaptchaResponse.setAttribute('name', 'g-recaptcha-response');
+        recaptchaResponse.setAttribute('value', token);
+        form.appendChild(recaptchaResponse);
+        form.submit();
+      }
+
+      grecaptcha.ready(function () {
+        document
+          .getElementById('send-button')
+          .addEventListener('click', function (event) {
+            event.preventDefault();
+            grecaptcha
+              .execute('6LcCJDEqAAAAAG8IXGutO03hsbljzNQNhVmefd_K', {
+                action: 'submit',
+              })
+              .then(function (token) {
+                onSubmit(token);
+              });
+          });
+      });
+    </script>
   </body>
 </html>
