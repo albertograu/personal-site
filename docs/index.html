@@ -301,27 +301,21 @@
     <script src="https://www.google.com/recaptcha/api.js?render=6LcCJDEqAAAAAG8IXGutO03hsbljzNQNhVmefd_K"></script>
     <script>
       function onSubmit(token) {
-        var form = document.getElementById('myForm');
-        var recaptchaResponse = document.createElement('input');
-        recaptchaResponse.setAttribute('type', 'hidden');
-        recaptchaResponse.setAttribute('name', 'g-recaptcha-response');
-        recaptchaResponse.setAttribute('value', token);
-        form.appendChild(recaptchaResponse);
-        form.submit();
+        document.getElementById('myForm').submit();
       }
 
       grecaptcha.ready(function () {
-        document
-          .getElementById('send-button')
-          .addEventListener('click', function (event) {
-            event.preventDefault();
-            grecaptcha
-              .execute('6LcCJDEqAAAAAG8IXGutO03hsbljzNQNhVmefd_K', {
-                action: 'submit',
-              })
-              .then(function (token) {
-                onSubmit(token);
-              });
+        grecaptcha
+          .execute('6LcCJDEqAAAAAG8IXGutO03hsbljzNQNhVmefd_K', {
+            action: 'submit',
+          })
+          .then(function (token) {
+            var recaptchaResponse = document.createElement('input');
+            recaptchaResponse.setAttribute('type', 'hidden');
+            recaptchaResponse.setAttribute('name', 'g-recaptcha-response');
+            recaptchaResponse.setAttribute('value', token);
+            document.getElementById('myForm').appendChild(recaptchaResponse);
+            document.getElementById('myForm').submit();
           });
       });
     </script>
