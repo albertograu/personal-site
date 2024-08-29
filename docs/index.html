@@ -316,7 +316,10 @@
                   'g-recaptcha-response': token,
                 },
                 success: function () {
-                  alert('Form submitted successfully!');
+                  alert('Email sent successfully!');
+                  // Clear the form fields
+                  $('#email').val('');
+                  $('#message').val('');
                 },
                 error: function (err) {
                   alert(
