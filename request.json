@@ -1,7 +1,0 @@
-{
-    "event": {
-      "token": "recaptcha.enterprise.execute()",
-      "expectedAction": "USER_ACTION",
-      "siteKey": "6LcCJDEqAAAAAG8IXGutO03hsbljzNQNhVmefd_K",
-    }
-  }
